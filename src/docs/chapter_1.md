@@ -81,7 +81,7 @@ book/
 ```
 
 
-### 3. 配置
+### 4. 公式
 
 内联方程由 ```\\(``` 和 ```\\)``` 分隔，
 块方程由 ```\\[``` 和 ```\\]``` 分隔。
@@ -90,7 +90,17 @@ book/
  \frac{\partial c}{\partial t} = - \nabla \cdot \mathbf{v} c
 \\]
 
-### 4. 经常忘记的 Markdown 语法
+### 5. 持续部署
+
+GitHub Pages 对 mdbook 提高了非常好的支持。
+
+点击 Settings => 点击 Pages => 在 source 中选择 GitHub Actions => 点击 mdbook 中的 Configure。
+
+会自动生成一个 GitHub Actions 的配置文件 ``` .github/workflows/mdbook.yml ```,
+
+不用修改，点击保存既可以，稍微等一会，就可以打开 GitHub Pages 提供的网站。
+
+### 6. 经常忘记的 Markdown 语法
 
 链接 和 图片
 
