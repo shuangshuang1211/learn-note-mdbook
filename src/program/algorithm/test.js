@@ -13,4 +13,22 @@ Array.prototype.myReduce = function (callFn, initVal) {
 }
 
 const sumArr = [1,2,3].myReduce((acc, cur) => cur + acc, 0)
-console.log('++++ sumArr', sumArr);
+// console.log('++++ sumArr', sumArr);
+
+
+
+function maxStackSize() {
+  // TODO
+  let count = 0;
+  try {
+    (function recurse() {
+      count++;
+      recurse();
+    })();
+  } catch(e) {
+    console.log('++++ e', e);
+    return count;
+  }
+}
+
+console.log(maxStackSize())
