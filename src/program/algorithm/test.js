@@ -32,3 +32,13 @@
 // }
 
 // console.log(maxStackSize())
+
+// 实现并发控制
+function parallel(taskItems = [], taskHandler, concurrency = 3) {
+
+}
+const task = item => new Promise(resolve => setTimeout(() => {console.log(item); resolve(item)}, 2000))
+
+parallel([1, 2, 3, 4, 5, 6], task, 2).then((result) => {
+  console.log('+++', result)
+})
